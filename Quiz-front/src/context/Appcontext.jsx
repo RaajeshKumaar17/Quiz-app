@@ -16,7 +16,7 @@ export default function AppcontextProvider({ children }) {
   let maxLen;
   const fetchQuestions = async () => {
     try {
-      const { data } = await axios.get("http://localhost:3000/questions");
+      const { data } = await axios.get("https://quiz-app-backend-pqdf.onrender.com");
       console.log(data);
 
       setQuestions(data);
